@@ -1,4 +1,4 @@
-{% set version = "2.10.0" %}
+{% set version = "2.11.0" %}
 
 package:
   name: requests
@@ -7,7 +7,7 @@ package:
 source:
   fn: requests-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
-  md5: a36f7a64600f1bfec4d55ae021d232ae
+  sha256: b2ff053e93ef11ea08b0e596a1618487c4e4c5f1006d7a1706e3671c57dea385
 
 build:
   number: 0
@@ -38,3 +38,4 @@ extra:
     - msarahan
     - pelson
     - sigmavirus24
+    - ocefpaf
