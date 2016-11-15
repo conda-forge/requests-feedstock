@@ -1,4 +1,4 @@
-{% set version = "2.11.1" %}
+{% set version = "2.12.0" %}
 
 package:
   name: requests
@@ -7,7 +7,7 @@ package:
 source:
   fn: requests-{{ version }}.tar.gz
   url: https://github.com/kennethreitz/requests/archive/v{{ version }}.tar.gz
-  sha256: e8e5710ae923a00e45631f0e47c30ebfc83b7a8c4a7a818f78bf820f9b607558
+  sha256: c356281fd5d34512f0f3efb189b0c5a69d7e552018e4bc73037e318569a9ef1a
 
 build:
   number: 0
