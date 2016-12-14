@@ -11,6 +11,18 @@ Summary: Python HTTP for Humans.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/requests-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/requests-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/requests-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/requests-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/requests-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/requests-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requests/badges/version.svg)](https://anaconda.org/conda-forge/requests)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requests/badges/downloads.svg)](https://anaconda.org/conda-forge/requests)
+
 Installing requests
 ===================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/requests-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/requests-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/requests-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/requests-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/requests-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/requests-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requests/badges/version.svg)](https://anaconda.org/conda-forge/requests)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requests/badges/downloads.svg)](https://anaconda.org/conda-forge/requests)
 
 
 Updating requests-feedstock
