@@ -1,4 +1,4 @@
-{% set version = "2.13.0" %}
+{% set version = "2.17.3" %}
 
 package:
   name: requests
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: requests-{{ version }}.tar.gz
-  url: https://github.com/kennethreitz/requests/archive/v{{ version }}.tar.gz
-  sha256: 48fd188aaa388b4193bf7b917cf861a00eafacad651148475bc65ffaef445627
+  url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
+  sha256: 8d29f97ed1541709b57caddb77bb20592411d7ca10ec4f03275f49ee8456e225
 
 build:
   number: 0
@@ -19,6 +19,10 @@ requirements:
     - setuptools
   run:
     - python
+    - chardet >=3.0.2,<3.1.0
+    - idna >=2.5,<2.6
+    - urllib3 >=1.21.1,<1.22
+    - certifi >=2017.4.17
 
 test:
   imports:
