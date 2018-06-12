@@ -1,4 +1,4 @@
-{% set version = "2.18.4" %}
+{% set version = "2.19.0" %}
 
 package:
   name: requests
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
-  sha256: 9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e
+  sha256: cc408268d0e21589bcc2b2c248e42932b8c4d112f499c12c92e99e2178a6134c
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
