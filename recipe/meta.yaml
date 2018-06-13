@@ -1,4 +1,4 @@
-{% set version = "2.18.4" %}
+{% set version = "2.19.0" %}
 
 package:
   name: requests
@@ -6,21 +6,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
-  sha256: 9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e
+  sha256: cc408268d0e21589bcc2b2c248e42932b8c4d112f499c12c92e99e2178a6134c
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - chardet >=3.0.2,<3.1.0
-    - idna >=2.5,<2.7
-    - urllib3 >=1.21.1,<1.23
+    - idna >=2.5,<2.8
+    - urllib3 >=1.21.1,<1.24
     - certifi >=2017.4.17
 
 test:
