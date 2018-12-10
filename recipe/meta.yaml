@@ -1,4 +1,4 @@
-{% set version = "2.20.1" %}
+{% set version = "2.21.0" %}
 
 package:
   name: requests
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
-  sha256: ea881206e59f41dbd0bd445437d792e43906703fff75ca8ff43ccdb11f33f263
+  sha256: 502a824f31acdacb3a35b6690b5fbf0bc41d63a24a45c4004352b0242707598e
 
 build:
   number: 1000
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
   host:
@@ -19,8 +19,8 @@ requirements:
   run:
     - python
     - chardet >=3.0.2,<3.1.0
-    - idna >=2.5,<2.8
-    - urllib3 >=1.21.1,<1.24
+    - idna >=2.5,<2.9
+    - urllib3 >=1.21.1,<1.25
     - certifi >=2017.4.17
 
 test:
