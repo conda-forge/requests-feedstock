@@ -1,4 +1,4 @@
-{% set version = "2.21.0" %}
+{% set version = "2.22.0" %}
 
 package:
   name: requests
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
-  sha256: 502a824f31acdacb3a35b6690b5fbf0bc41d63a24a45c4004352b0242707598e
+  sha256: 11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
