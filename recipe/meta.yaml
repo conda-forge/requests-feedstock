@@ -9,7 +9,7 @@ source:
   sha256: 11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - python
     - chardet >=3.0.2,<3.1.0
     - idna >=2.5,<2.9
-    - urllib3 >=1.21.1,<1.25
+    - urllib3 >=1.21.1,<1.26,!=1.25.0,!=1.25.1
     - certifi >=2017.4.17
 
 test:
