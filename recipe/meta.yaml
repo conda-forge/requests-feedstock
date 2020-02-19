@@ -24,6 +24,10 @@ requirements:
     - certifi >=2017.4.17
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - requests
 
