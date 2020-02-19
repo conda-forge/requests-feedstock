@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -18,8 +18,8 @@ requirements:
     - pip
   run:
     - python
-    - chardet >=3.0.2,<3.1.0
-    - idna >=2.5,<2.9
+    - chardet >=3.0.2,<4
+    - idna >=2.5,<3
     - urllib3 >=1.21.1,<1.26,!=1.25.0,!=1.25.1
     - certifi >=2017.4.17
 
@@ -31,7 +31,8 @@ about:
   home: http://python-requests.org
   license: Apache 2.0
   license_file: LICENSE
-  summary: 'Python HTTP for Humans'
+  summary: 'Requests is an elegant and simple HTTP library for Python, built with ♥.'
+  dev_url: https://github.com/psf/requests
 
 extra:
   recipe-maintainers:
