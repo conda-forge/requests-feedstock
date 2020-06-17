@@ -1,4 +1,4 @@
-{% set version = "2.23.0" %}
+{% set version = "2.24.0" %}
 
 package:
   name: requests
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
-  sha256: b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6
+  sha256: b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b
 
 build:
   noarch: python
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   home: http://python-requests.org
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Requests is an elegant and simple HTTP library for Python, built with ♥.'
+  summary: Requests is an elegant and simple HTTP library for Python, built with ♥.
   dev_url: https://github.com/psf/requests
 
 extra:
