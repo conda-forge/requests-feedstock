@@ -5,11 +5,11 @@ Home: http://python-requests.org
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/requests-feedstock/blob/master/LICENSE.txt)
 
 Summary: Requests is an elegant and simple HTTP library for Python, built with ♥.
 
-
+Development: https://github.com/psf/requests
 
 Current build status
 ====================
