@@ -1,28 +1,30 @@
+{% set name = "requests" %}
 {% set version = "2.26.0" %}
 
+
 package:
-  name: requests
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/requests/requests-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requests-{{ version }}.tar.gz
   sha256: b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7
 
 build:
-  noarch: python
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - chardet >=3.0.2,<5
-    - idna >=2.5,<3
-    - urllib3 >=1.21.1,<1.27
+    - python >=3.6
     - certifi >=2017.4.17
+    - chardet >=3.0.2,<5
+    - charset-normalizer >=2.0.0,<2.0.1
+    - urllib3 >=1.21.1,<1.27
 
 test:
   requires:
