@@ -1,5 +1,5 @@
 {% set name = "requests" %}
-{% set version = "2.26.0" %}
+{% set version = "2.27.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requests-{{ version }}.tar.gz
-  sha256: b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7
+  sha256: 8e5643905bf20a308e25e4c1dd379117c09000bf8a82ebccc462cfb1b34a16b5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
