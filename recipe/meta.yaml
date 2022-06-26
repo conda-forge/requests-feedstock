@@ -11,7 +11,7 @@ source:
   sha256: d568723a7ebd25875d8d1eaf5dfa068cd2fc8194b2e483d7b1f7c81918dbec6b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,6 +25,9 @@ requirements:
     - charset-normalizer >=2.0.0,<2.1
     - idna >=2.5,<4
     - urllib3 >=1.21.1,<1.27
+  # https://github.com/psf/requests/blob/da9996fe4dc63356e9467d0a5e10df3d89a8528e/requests/__init__.py#L103-L115
+  run_constrained:
+    - chardet >=3.0.2,<5
 
 test:
   requires:
