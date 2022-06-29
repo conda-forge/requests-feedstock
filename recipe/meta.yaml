@@ -17,17 +17,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<4.0
     - pip
   run:
-    - python >=3.6
+    - python >=3.6,<4.0
     - certifi >=2017.4.17
-    - charset-normalizer >=2.0.0,<2.1
+    - charset-normalizer >=2,<3
     - idna >=2.5,<4
     - urllib3 >=1.21.1,<1.27
   # https://github.com/psf/requests/blob/da9996fe4dc63356e9467d0a5e10df3d89a8528e/requests/__init__.py#L103-L115
   run_constrained:
-    - chardet >=3.0.2,<5
+    - chardet >=3.0.2,<6
 
 test:
   requires:
