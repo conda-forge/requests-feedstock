@@ -1,5 +1,5 @@
 {% set name = "requests" %}
-{% set version = "2.28.2" %}
+{% set version = "2.29.0" %}
 
 
 package:
@@ -8,19 +8,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requests-{{ version }}.tar.gz
-  sha256: 98b1b2782e3c6c4904938b84c0eb932721069dfdb9134313beff7c83c2df24bf
+  sha256: f2e34a75f4749019bb0e3effb66683630e4ffeaf75819fb51bebef1bf5aef059
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python >=3.7
     - pip
   run:
-    - python >=3.7,<4.0
+    - python >=3.7
     - certifi >=2017.4.17
     - charset-normalizer >=2,<4
     - idna >=2.5,<4
