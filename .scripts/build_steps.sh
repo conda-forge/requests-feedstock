@@ -71,7 +71,7 @@ else
     if [[ -f "${RECIPE_ROOT}/recipe.yaml" ]]; then
         rattler-build build \
             --recipe "${RECIPE_ROOT}/recipe.yaml" \
-            --build-dir "${FEEDSTOCK_ROOT}/build_artifacts"
+            --output-dir "${FEEDSTOCK_ROOT}/build_artifacts"
     else
         conda-build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
             --suppress-variables ${EXTRA_CB_OPTIONS:-} \
