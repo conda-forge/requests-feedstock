@@ -35,6 +35,7 @@ requirements:
 
 tests:
   - python:
+      python_version: ${{ python_min }}.*
       imports:
         - requests
       pip_check: true
