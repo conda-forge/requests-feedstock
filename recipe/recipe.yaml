@@ -13,7 +13,7 @@ source:
   sha256: 18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -30,8 +30,10 @@ requirements:
     - idna >=2.5,<4
     - urllib3 >=1.26,<3
   run_constraints:
-    # https://github.com/psf/requests/blob/da9996fe4dc63356e9467d0a5e10df3d89a8528e/requests/__init__.py#L103-L115
-    - chardet >=3.0.2,<6
+    # requests >=2.33.0 has a run time constraint in its __init__.py: chardet >=3.0.2,<8
+    # https://github.com/psf/requests/blob/v2.33.1/src/requests/__init__.py#L79
+    # https://github.com/psf/requests/blob/111d2b77790bf49943c0dfa09b365371c24aec7e/src/requests/__init__.py#L79
+    - chardet >=3.0.2,<8
 
 tests:
   - python:
