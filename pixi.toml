@@ -5,7 +5,7 @@
 
 [workspace]
 name = "requests-feedstock"
-version = "3.58.0"  # conda-smithy version used to generate this file
+version = "3.61.1"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/requests-feedstock"
 authors = ["@conda-forge/requests"]
 channels = ["conda-forge"]
