@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: requests
-  version: "2.34.0"
+  version: "2.34.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/requests-${{ version }}.tar.gz
-  sha256: 7d62fe92f50eb82c529b0916bb445afa1531a566fc8f35ffdc64446e771b856a
+  sha256: 0fc5669f2b69704449fe1552360bd2a73a54512dfd03e65529157f1513322beb
 
 build:
   number: 0
